@@ -8,3 +8,7 @@ const toNameCase = function(str) {
 }
 
 toNameCase('jOnas')
+
+const announcement = `All passengers come to boarding door 23, boarding door 23!`;
+
+console.log(announcement.replaceAll(`door`, `gate`));
