@@ -218,9 +218,9 @@ const startLogOutTimer = function () {
 let currentAccount, timer;
 
 // FAKE ALWAYS LOGGED IN
-// currentAccount = account1;
-// updateUI(currentAccount);
-// containerApp.style.opacity = 100;
+currentAccount = account1;
+updateUI(currentAccount);
+containerApp.style.opacity = 100;
 
 btnLogin.addEventListener('click', function (e) {
   // Prevent form from submitting
@@ -530,8 +530,8 @@ console.log(new Date(account1.movementsDates[0]));
 console.log(new Date(2037, 10, 19, 15, 23, 5));
 console.log(new Date(2037, 10, 31));
 
-console.log(new Date(0));
-console.log(new Date(3 * 24 * 60 * 60 * 1000));
+console.log(new Date(0)); // 0 milliseconds after unix time - 1st jan 1970
+console.log(new Date(3 * 24 * 60 * 60 * 1000)); // Convert milliseconds to days - 3 days * 24hrs * 60mins * 60 seconds * 1000 milliseconds
 
 
 // Working with dates
